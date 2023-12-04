@@ -19,7 +19,7 @@ spec:
       containers:
         - name: quarkus-quickstarts
           image: >-
-            changeme
+            image-path-changeme
           ports:
             - containerPort: 8080
               protocol: TCP
