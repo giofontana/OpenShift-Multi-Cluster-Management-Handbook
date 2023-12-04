@@ -67,7 +67,7 @@ spec:
             oc apply -f chapter14/Deploy/argo-app.yaml; 
             counter=0;
             timeout=120;
-            while [[ $(oc get application quarkus-quickstarts -o jsonpath='{.status.health.status}' -n openshift-gitops) != "Healthy" ]];
+            while [[ $(oc get applications.argoproj.io/quarkus-quickstarts -o jsonpath='{.status.health.status}' -n openshift-gitops) != "Healthy" ]];
             do 
               if [ $counter -gt $timeout ]; then
                 echo 'Timeout reached! Inspect the application on OpenShift to check its status...';

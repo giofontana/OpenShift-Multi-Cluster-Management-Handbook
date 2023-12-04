@@ -2,13 +2,13 @@ apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   generateName: quarkus-devsecops-v1-pr
-  namespace: chap14-review-cicd
+  namespace: demo-cicd
 spec:
   params:
     - name: APP_NAME
       value: quarkus-quickstarts
     - name: GIT_REPO
-      value: 'https://github.com/giofontana/Openshift-Multi-Cluster-management.git'
+      value: 'https://github.com/giofontana/OpenShift-Multi-Cluster-Management-Handbook.git'
     - name: GIT_REVISION
       value: ''
     - name: IMAGE_NAME

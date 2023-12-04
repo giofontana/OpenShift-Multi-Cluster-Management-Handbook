@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: s2i-java-old-version
-  namespace: chap14-review-cicd
+  namespace: demo-cicd
 spec:
   description: >-
     s2i-java task clones a Git repository and builds and pushes a container
