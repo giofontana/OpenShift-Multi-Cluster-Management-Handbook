@@ -8,5 +8,5 @@ bases:
 
 images:
 - name: changeme
-  newName: image-path-changeme
+  newName: quay-quay-enterprise-registry.apps.simpsons.lab.gfontana.me/demo/quarkus-quickstarts
   newTag: "v2"
