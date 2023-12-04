@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
   name: quarkus-build
-  namespace: chap14-review-cicd
+  namespace: demo-cicd
 spec:
   params:
     - default: quarkus-quickstarts
@@ -15,7 +15,7 @@ spec:
       name: GIT_REVISION
       type: string
     - default: >-
-        image-registry.openshift-image-registry.svc:5000/chap14-review-cicd/quarkus-quickstarts
+        image-registry.openshift-image-registry.svc:5000/demo-cicd/quarkus-quickstarts
       name: IMAGE_NAME
       type: string
     - default: quarkus-getting-started

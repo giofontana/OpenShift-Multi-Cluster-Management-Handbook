@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   generateName: quarkus-quickstarts-
-  namespace: chap14-review-cicd
+  namespace: demo-cicd
 spec:
   params:
     - name: APP_NAME

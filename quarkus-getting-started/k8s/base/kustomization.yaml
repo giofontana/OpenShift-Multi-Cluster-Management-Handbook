@@ -4,7 +4,7 @@ kind: Kustomization
 commonLabels:
   app: quarkus-quickstarts
 
-namespace: chap14-review-cicd
+namespace: demo-cicd
 
 resources:
   - deployment.yaml
