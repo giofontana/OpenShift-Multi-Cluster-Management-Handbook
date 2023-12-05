@@ -87,7 +87,7 @@ spec:
             oc apply -f $(params.ARGO_APP_PATH); 
             counter=0;
             timeout=120;
-            while [[ $(oc get application quarkus-quickstarts -o jsonpath='{.status.health.status}' -n openshift-gitops) != "Healthy" ]];
+            while [[ $(oc get applications.argoproj.io/quarkus-quickstarts -o jsonpath='{.status.health.status}' -n openshift-gitops) != "Healthy" ]];
             do 
               if [ $counter -gt $timeout ]; then
                 echo 'Timeout reached';
